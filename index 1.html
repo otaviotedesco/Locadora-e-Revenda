@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Aluguel de Carros</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- CSS personalizado -->
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    <a class="navbar-brand" href="#">Aluguel de Carros</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <section class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Carros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre Nós</a>
+            </li>
+        </ul>
+    </section>
+</nav>
+
+<section class="container mt-5">
+    <section class="row">
+        <section class="col-lg-3 d-none d-lg-block">
+            <!-- Sidebar -->
+            <section class="sidebar">
+                <h5>Filtrar</h5>
+                <form>
+                    <section class="form-group mb-0">
+                        <label for="tipoServico">Tipo de Serviço</label>
+                        <h5>Tipo de Serviço</h5>
+                        <select class="form-control" id="tipoServico">
+                            <option>Aluguel</option>
+                            <option>Compra</option>
+                        </select>
+                    </section>
+                    <section class="form-group mb-0">
+                        <label for="tipoVeiculo">Tipo do Veículo</label>
+                        <h5> Tipo do Veículo</h5>
+                        <select class="form-control" id="marcaCarro">
+                            <option>Passeio</option>
+                            <option>Carga</option>
+                            <option>Motocicleta</option>
+                            <option>Utilitário</option>
+                            <option>SUV</option>
+                        </select>
+                    </section>
+                    <section class="form-group mb-0">
+                        <label for="anoMin">Ano Mínimo</label>
+                        <h5>Ano mínimo</h5>
+                        <input type="number" class="form-control" id="anoMin">
+                    </section>
+                    <section class="form-group mb-0">
+                        <label for="anoMax">Ano Máximo</label>
+                        <h5>Ano Máximo</h5>
+                        <input type="number" class="form-control" id="anoMax">
+                    </section>
+                    <section class="form-group mb-0">
+                        
+                        <label for="precoMin">Preço Mínimo</label>
+                        <h5>Preço Mínimo</h5>
+                        <input type="number" class="form-control" id="precoMin">
+                    </section>
+                    <section class="form-group mb-3">
+                        
+                        <label for="precoMax">Preço Máximo</label>
+                        <input type="number" class="form-control" id="precoMax">
+                    </section>
+                    <button type="submit" class="btn btn-primary">Filtrar</button>
+                </form>
+            </section>
+        </section>
+
+        <div class="col-lg-9">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 1</h5>
+                                <p class="card-text">Conteúdo do Card 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 2</h5>
+                                <p class="card-text">Conteúdo do Card 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 3</h5>
+                                <p class="card-text">Conteúdo do Card 3.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 4</h5>
+                                <p class="card-text">Conteúdo do Card 4.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 5</h5>
+                                <p class="card-text">Conteúdo do Card 5.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card 6</h5>
+                                <p class="card-text">Conteúdo do Card 6.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Navbar Styles */
+#navbar {
+    background-color: #1a49e4;
+}
+
+.navbar-brand {
+    color: #EDF2F4;
+    text-size-adjust: 15px;
+}
+
+li{
+    color: #EDF2F4;
+}
+
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    padding: 20px;
+}
+
+/* Form Styles */
+.form-group label {
+    color: #2B2D42;
+}
+
+/* Card Styles */
+.card {
+    background-color: #EDF2F4;
+    color: #2B2D42;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #EDF2F4;
+}
+
+.card-text {
+    color: #2B2D42;
+}
+
+.btn-primary {
+    background-color: #EF233C;
+}
+
+/* Container Styles */
+.container {
+    margin-top: 30px;
+}
+
+/* Page Header Styles */
+h5 {
+    color: #EDF2F4;
+}
+
