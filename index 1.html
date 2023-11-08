@@ -1,156 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Aluguel de Carros</title>
+    <title>Buy N' Drive</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css"> <!-- CSS personalizado -->
 </head>
+
 <body>
+    <!---------------------------Navbar-------------------------->
+    <header>
+        <section class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a class="bn-logo" href="index 1.html">
+                    <img id="logo" src="logo/3-fotor-bg-remover-20231107182338.png" alt="Rental Car">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-    <a class="navbar-brand" href="#">Aluguel de Carros</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <section class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Início</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Carros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="sobre.html">Sobre Nós</a>
-            </li>
-        </ul>
-    </section>
-</nav>
-
-<section class="container mt-5">
-    <section class="row">
-        <section class="col-lg-3 d-none d-lg-block">
-            <!-- Sidebar -->
-            <section class="sidebar">
-                <h5>Filtrar</h5>
-                <form>
-                    <section class="form-group mb-0">
-                        <label for="tipoServico">Tipo de Serviço</label>
-                        <h5>Tipo de Serviço</h5>
-                        <select class="form-control" id="tipoServico">
-                            <option>Aluguel</option>
-                            <option>Compra</option>
-                        </select>
+                <section class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <section class="navbar-nav">
+                        <a class="nav-item nav-link" id="menu-inicio" href="#">Comprar</span></a>
+                        <a class="nav-item nav-link" id="menu-anuncie" href="#">Anuncie seu veículo</a>
+                        <a class="nav-item nav-link" id="menu-serviços" href="#">Serviços</a>
+                        <a class="nav-item nav-link" id="menu-contatos" href="#">Contato</a>
                     </section>
-                    <section class="form-group mb-0">
-                        <label for="tipoVeiculo">Tipo do Veículo</label>
-                        <h5> Tipo do Veículo</h5>
-                        <select class="form-control" id="marcaCarro">
-                            <option>Passeio</option>
-                            <option>Carga</option>
-                            <option>Motocicleta</option>
-                            <option>Utilitário</option>
-                            <option>SUV</option>
-                        </select>
-                    </section>
-                    <section class="form-group mb-0">
-                        <label for="anoMin">Ano Mínimo</label>
-                        <h5>Ano mínimo</h5>
-                        <input type="number" class="form-control" id="anoMin">
-                    </section>
-                    <section class="form-group mb-0">
-                        <label for="anoMax">Ano Máximo</label>
-                        <h5>Ano Máximo</h5>
-                        <input type="number" class="form-control" id="anoMax">
-                    </section>
-                    <section class="form-group mb-0">
-                        
-                        <label for="precoMin">Preço Mínimo</label>
-                        <h5>Preço Mínimo</h5>
-                        <input type="number" class="form-control" id="precoMin">
-                    </section>
-                    <section class="form-group mb-3">
-                        
-                        <label for="precoMax">Preço Máximo</label>
-                        <input type="number" class="form-control" id="precoMax">
-                    </section>
-                    <button type="submit" class="btn btn-primary">Filtrar</button>
-                </form>
-            </section>
+                </section>
+            </nav>
         </section>
 
-        <div class="col-lg-9">
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card 1</h5>
-                                <p class="card-text">Conteúdo do Card 1.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card 2</h5>
-                                <p class="card-text">Conteúdo do Card 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card 3</h5>
-                                <p class="card-text">Conteúdo do Card 3.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card 4</h5>
-                                <p class="card-text">Conteúdo do Card 4.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card 5</h5>
-                                <p class="card-text">Conteúdo do Card 5.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card 6</h5>
-                                <p class="card-text">Conteúdo do Card 6.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="jumbotron">
+            <h1 class="display-4">Buy N' Drive</h1>
+            <p class="lead">O carro perfeito para a sua viagem.</p>
         </div>
-    </div>
-</div>
+    </header><!---------------------------Navbar-------------------------->
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <main><!---------------------------Main-------------------------->
+
+        <section class="container-lg-90">
+            <section class="row">
+                <section class="col-lg-3 d-none d-lg-block">
+                    <!---------------------------Sidebar-------------------------->
+                    <section class="sidebar">
+                        <h5>Filtrar</h5>
+                        <form>
+                            <section class="form-group mb-0">
+                                <label for="tipoServico">Tipo de Serviço</label>
+                                <h5>Tipo de Serviço</h5>
+                                <select class="form-control" id="tipoServico">
+                                    <option>Aluguel</option>
+                                    <option>Compra</option>
+                                </select>
+                            </section>
+                            <section class="form-group mb-0">
+                                <label for="tipoVeiculo">Tipo do Veículo</label>
+                                <h5> Tipo do Veículo</h5>
+                                <select class="form-control" id="marcaCarro">
+                                    <option>Passeio</option>
+                                    <option>SUV</option>
+                                    <option>Esportivo</option>
+                                    <option>Motocicleta</option>
+                                    <option>Utilitário</option>
+                                    <option>Carga</option>
+
+                                </select>
+                            </section>
+                            <section class="form-group mb-0">
+                                <label for="anoMin">Ano Mínimo</label>
+                                <h5>Ano mínimo</h5>
+                                <input type="number" class="form-control" id="anoMin">
+                            </section>
+                            <section class="form-group mb-0">
+                                <label for="anoMax">Ano Máximo</label>
+                                <h5>Ano Máximo</h5>
+                                <input type="number" class="form-control" id="anoMax">
+                            </section>
+                            <section class="form-group mb-0">
+
+                                <label for="precoMin">Preço Mínimo</label>
+                                <h5>Preço Mínimo</h5>
+                                <input type="number" class="form-control" id="precoMin">
+                            </section>
+                            <section class="form-group mb-3">
+                                <label for="precoMax">Preço Máximo</label>
+                                <h5>Preço Máximo</h5>
+                                <input type="number" class="form-control" id="precoMax">
+                            </section>
+                            <button type="submit" class="btn btn-primary">Filtrar</button>
+                        </form>
+                    </section>
+                </section>
+                <!---------------------------FINAL Sidebar-------------------------->
+
+                <div class="col-lg-9">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="img/lambo1.jpg" class="card-img-top" alt="Lamborhini Huracán STO 2023">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lamborhini Huracán STO 2023</h5>
+                                        <p class="card-text">R$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="img/amg.jpg" class="card-img-top" alt="Mercedes AMG GTS 2021">
+                                    <div class="card-body" style="margin-top: 25px;">
+                                        <!--Tirar esse style daqui-->
+                                        <h5 class="card-title">Mercedes AMG GTS 2021</h5>
+                                        <p class="card-text">R$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="img/audia.jpg" class="card-img-top"
+                                        alt="AUDI A6 2020"><!--Tirar esse style daqui-->
+                                    <div class="card-body" style="margin-top: 55px;">
+                                        <h5 class="card-title">AUDI A6 2020</h5>
+                                        <p class="card-text">R$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="img/audiq.jpg" class="card-img-top" alt="Audi RS 2022">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Audi RS 2022</h5>
+                                        <p class="card-text">R$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="img/ccamaro.jpg" class="card-img-top" alt="Camaro ZR1 2021">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Camaro ZR1 2021</h5>
+                                        <p class="card-text">R$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="img/mustang.jpg" class="card-img-top" alt="Shelby GT 350">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Shelby GT 350</h5>
+                                        <p class="card-text">R$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="img/lamborghini-4815250_640.jpg" class="card-img-top"
+                                        alt="Lamborhini Murciélago 2020">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lamborhini Murciélago 2020</h5>
+                                        <p class="card-text">R$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="img/bmw-5665352_640.jpg" class="card-img-top" alt="BMW M2 2021">
+                                    <div class="card-body">
+                                        <h5 class="card-title">BMW M2 2021</h5>
+                                        <p class="card-text">R$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="img/porsche-911-gt3-2865400_640.jpg" class="card-img-top"
+                                        alt="Porsche 911 GT3 2022">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Porsche 911 GT3 2022</h5>
+                                        <p class="card-text">R$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Final das divs cards
+                    -->
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </body>
+
 </html>

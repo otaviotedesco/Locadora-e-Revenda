@@ -1,56 +1,142 @@
-/* Navbar Styles */
-#navbar {
-    background-color: #1a49e4;
+header,
+.navbar {
+  background-color: rgb(35, 32, 32);
 }
 
-.navbar-brand {
-    color: #EDF2F4;
-    text-size-adjust: 15px;
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-li{
-    color: #EDF2F4;
+#logo {
+  height: 15%;
+  width: 15%;
+  margin-left: 20px;
 }
 
+.bn-logo {
+  padding: 0;
+  color: #FFF;
+}
 
-/* Sidebar Styles */
+.vl-logo:hover {
+  color: #FFF;
+}
+
+#navbar-links a {
+  color: #FFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem .8rem;
+}
+
+.nav-item.active {
+  border-bottom: 3px solid #FFF;
+}
+
+.navbar-nav{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 110%;
+   font-family: Poppins, sans-serif;
+   font-size: 1.4rem;
+   font-weight:500;
+    
+
+}
+
+/*---------------------BODY---------------*/
+body {
+  background-color: #6c7c83;
+}
+
+/*-----------------------SIDEBAR--------------*/
 .sidebar {
-    background-color: #2B2D42;
-    color: #EDF2F4;
-    padding: 20px;
+  background-color: #2B2D42;
+  color: #EDF2F4;
+  padding: 20px;
+  margin-top: 50px;
+  max-width: 250px;
 }
 
-/* Form Styles */
+/*----------------------FORM---------------*/
 .form-group label {
-    color: #2B2D42;
+  color: #2B2D42;
 }
 
-/* Card Styles */
+/*-----------------------CARD-------------*/
 .card {
-    background-color: #EDF2F4;
-    color: #2B2D42;
-    margin-bottom: 20px;
+  background-color: #EDF2F4;
+  color: #2B2D42;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
-    color: #EDF2F4;
+  color: #1085b3;
 }
 
 .card-text {
-    color: #2B2D42;
+  color: #2B2D42;
 }
 
-.btn-primary {
-    background-color: #EF233C;
+s .btn-primary {
+  background-color: #EF233C;
 }
 
-/* Container Styles */
-.container {
-    margin-top: 30px;
-}
 
-/* Page Header Styles */
+
 h5 {
-    color: #EDF2F4;
+  color: #f4efed;
 }
 
+
+/*--------------------JUMBOTRON--------------*/
+
+.jumbotron {
+  background-image: url(https://cdn.pixabay.com/photo/2017/10/18/20/32/porsche-911-gt3-2865400_1280.jpg);
+  background-size: 70%;
+  background-position: right;
+  margin-top: 5%;
+  color: #bbbbc6;
+  background-repeat: no-repeat;
+  height: 350px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+
+
+/*--------------------CONTAINER-------------*/
+.container-lg-90 {
+  width: 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-top: 30px;
+}
